@@ -78,6 +78,9 @@ teachers[1] = 'Suzy';
 
 
 // hoisting is not actually a real thing. javascript engin does not hoist. hoisting is a metaphor that we have made up is a launguage converntion
+
+// metaphor implies that copy relationship without you potentialy even knowing.
+
 student5  // undefined
 teacher1  // undefined
 

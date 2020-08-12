@@ -1,6 +1,4 @@
 var teacher = "Kyle";
-export default function ask(question) {
+export default function ask(question) {  // expot mean public not mean private 
 	console.log(teacher, question);
 }
-
-ibuv is a JavaScript library focused on asynchronous IO
