@@ -84,23 +84,3 @@ var obj2 = {
 }
 
 obj2.ask('Whats my name'); // , Whats my name
-
-
-
-
-
-// Prototype: Shadowing
-function Workshop(teacher) {
-	this.teacher = teacher;
-};
-Workshop.prototype.ask = function(question) {
-	console.log(this.teacher, question);
-};
-
-var deepJS = new Workshop("Kyle");
-
-deepJS.ask = function(question) {
-	this.__proto__.ask.call(this.question.toUpperCase());
-};
-
-deepJS.ask("Opps, is this infinit recursion?")
