@@ -18,6 +18,17 @@ Avoid
 false == []   // true  <= coercion arr to boolean
 == not comparisons with unknown types
 
+Boolean(undefined) // 0
+String(undefined) // "undefined"
+Number(undefined) // NaN
+
+Boolean([]) // 1
+String([]) // ""
+String([1, 2, 3]) // 1, 2, 3
+Number([]) // 0
+Number([1, 2, 3]) // NaN
+
+
 
 Why to use Named function Expression
 1. self-reference : usefull for recursion
@@ -84,3 +95,29 @@ var obj2 = {
 }
 
 obj2.ask('Whats my name'); // , Whats my name
+
+/*
+** BOXING **
+primitives values don’t have methods or properties.
+Boxing is wrapping a primitive value in an Object.
+When you treat a primitive type like if it were an object.
+BoxingThis new object is then linked to the related built-in <.prototype>, so you can use prototype methods on primitive types.
+
+
+
+4 ways to call a function in JavaScript
+
+
+
+1 A regular function
+
+function sum(a, b) {
+  return a + b;
+}
+sum(5, 6);           // => 11
+([3, 7]).reduce(sum) // => 10
+
+
+
+
+*/
